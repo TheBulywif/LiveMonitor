@@ -39,7 +39,7 @@ def create_config(root):
     config.set('client', 'pass', 'Smart247!')
     config.set('client', 'client', 'TD5G Server')
 
-    with open(os.path.join(root, 'svrcfg.ini'), 'w') as configfile:
+    with open(os.path.join(root, 'config.ini'), 'w') as configfile:
         config.write(configfile)
     print(f"{configfile} created...")
 
